@@ -14,7 +14,7 @@ This is a simple web application that generates QR codes based on the user's inp
 
 1. Clone the repository:
 
-`gh repo clone Sainarendra21/Qr-code-generator`
+gh repo clone Sainarendra21/Qr-code-generator
 
 2. Open the `index.html` file in a web browser.
 
@@ -28,7 +28,9 @@ This is a simple web application that generates QR codes based on the user's inp
 
 ## Technologies Used
 
-- HTML
+- HTML(defined in `index.html`)
 - CSS (defined in `style.css`)
 - JavaScript (defined in `script.js`)
 - Google Chart API for generating QR codes.
+
+
