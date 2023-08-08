@@ -15,7 +15,7 @@ This is a simple web application that generates QR codes based on the user's inp
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/qr-code-generator.git
+gh repo clone Sainarendra21/Qr-code-generator
    ```
 
 2. Open the `index.html` file in a web browser.
