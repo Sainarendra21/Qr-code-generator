@@ -8,13 +8,15 @@ This is a simple web application that generates QR codes based on the user's inp
 - Enter custom text to be encoded into the QR code.
 - Interactive user interface.
 
-## Preview
+## Demo
+
+You can see a live demo of the QR Code Generator [here](https://qr-code-generator.sainarendra21.repl.co).
 
 ## Getting Started
 
 1. Clone the repository:
 
-gh repo clone Sainarendra21/Qr-code-generator
+          gh repo clone Sainarendra21/Qr-code-generator
 
 2. Open the `index.html` file in a web browser.
 
