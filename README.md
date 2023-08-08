@@ -1,8 +1,5 @@
 # QR Code Generator
 
-
-## Description
-
 This is a simple web application that generates QR codes based on the user's input. Users can enter text and select a size for the generated QR code, and upon clicking the "generate" button, a QR code is displayed on the page.
 
 ## Features
