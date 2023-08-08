@@ -1,5 +1,8 @@
 # QR Code Generator
 
+
+##Description
+
 This is a simple web application that generates QR codes based on the user's input. Users can enter text and select a size for the generated QR code, and upon clicking the "generate" button, a QR code is displayed on the page.
 
 ## Features
@@ -16,7 +19,7 @@ You can see a live demo of the QR Code Generator [here](https://qr-code-generato
 
 1. Clone the repository:
 
-          gh repo clone Sainarendra21/Qr-code-generator
+`gh repo clone Sainarendra21/Qr-code-generator`
 
 2. Open the `index.html` file in a web browser.
 
