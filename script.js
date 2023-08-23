@@ -1,18 +1,34 @@
 function generateqr() {
-  // Get the selected size from the dropdown
   var selectedSize = document.getElementById("size").value;
-
-  // Get the text input from the textarea
   var qrCodeText = document.getElementById("qrcodetext").value;
-
-  // Construct the API URL to generate the QR code
   var apiUrl = `https://chart.googleapis.com/chart?chs=${selectedSize}x${selectedSize}&cht=qr&chl=${encodeURIComponent(
     qrCodeText
   )}`;
-
-  // Get the img element by id
   var qrCodeImage = document.getElementById("img");
-
-  // Set the src attribute of the img element to the generated QR code URL
   qrCodeImage.src = apiUrl;
+
+  // Show the Save QR Code button
+  var saveButton = document.getElementById("saveButton");
+  saveButton.style.display = "block";
+  saveButton.addEventListener("click", saveQRCode);
+}
+
+function saveQRCode() {
+  var canvas = document.createElement("canvas");
+  var ctx = canvas.getContext("2d");
+  var qrCodeImage = document.getElementById("img");
+  canvas.width = qrCodeImage.width;
+  canvas.height = qrCodeImage.height;
+
+  ctx.drawImage(qrCodeImage, 0, 0, canvas.width, canvas.height);
+
+  canvas.toBlob(function(blob) {
+    var link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "qr_code.png";
+    link.click();
+
+    // Clean up the object URL after download
+    URL.revokeObjectURL(link.href);
+  }, "image/png");
 }
