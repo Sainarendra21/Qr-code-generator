@@ -7,7 +7,7 @@ function generateqr() {
   var qrCodeImage = document.getElementById("img");
   qrCodeImage.src = apiUrl;
 
-  // Show the Save QR Code button
+
   var saveButton = document.getElementById("saveButton");
   saveButton.style.display = "block";
   saveButton.addEventListener("click", saveQRCode);
@@ -28,7 +28,6 @@ function saveQRCode() {
     link.download = "qr_code.png";
     link.click();
 
-    // Clean up the object URL after download
     URL.revokeObjectURL(link.href);
   }, "image/png");
 }
